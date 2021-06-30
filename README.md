@@ -75,6 +75,7 @@ Unlike other clients, including [strava-api-v3](https://github.com/jaredholdcrof
   - [Strava OAuth Token](#strava-oauth-token)
 - [Users](#users)
 - [Resources](#resources)
+- [Upgrading](#upgrading)
 - [Contributing](#contributing)
 - [Copyright and License](#copyright-and-license)
 
@@ -854,7 +855,7 @@ See [strava-oauth-token](/bin/strava-oauth-token) or [strava-ruby-cli](https://g
 
 ### Webhooks
 
-Strava provides a [Webhook Event API](https://developers.strava.com/docs/webhooks/) that requires special access obtained by emailing [developers@strava.com](mailto:developers@strava.com).
+Strava provides a [Webhook Event API](https://developers.strava.com/docs/webhooks/).
 
 A complete example that handles subscription creation, deletion and handling can be found in [strava-webhooks](bin/strava-webhooks). Run `strava-webhooks` to see current registrations, `strava-webhooks handle` to run an HTTP server that handles both challenges and event data, `strava-webhooks create [url]` to create a new subscription and `strava-webhooks delete [id]` to delete it.
 
@@ -1025,7 +1026,7 @@ setting             | description
 --------------------|------------
 client_id           | Application client ID.
 client_secret       | Application client secret.
-endpoint            | Defaults to `https://api.strava.com/api/v3`.
+endpoint            | Defaults to `https://www.strava.com/api/v3`.
 
 ## Errors
 
@@ -1057,6 +1058,7 @@ $ STRAVA_CLIENT_ID=... STRAVA_CLIENT_SECRET=... strava-oauth-token
 
 * [Slava: Strava integration with Slack](https://slava.playplay.io), [source](https://github.com/dblock/slack-strava).
 * [Jekyll Blog at run.dblock.org](https://run.dblock.org), [source](https://github.com/dblock/run.dblock.org)
+* [Secret Strava](https://steele.blue/secret-strava/), [source](https://github.com/mattdsteele/secret-strava)
 
 ## Resources
 
@@ -1065,6 +1067,10 @@ $ STRAVA_CLIENT_ID=... STRAVA_CLIENT_SECRET=... strava-oauth-token
 * [Dealing with Strava API OAuth Token Migration](https://code.dblock.org/2018/11/17/dealing-with-strava-api-token-migration.html)
 * [Auto-Publishing Strava Runs to Github Pages](https://code.dblock.org/2018/02/17/auto-publishing-strava-runs-to-github-pages.html)
 * [Strava Command-Line Client](https://github.com/dblock/strava-ruby-cli)
+
+## Upgrading
+
+See [UPGRADING](UPGRADING.md).
 
 ## Contributing
 
